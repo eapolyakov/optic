@@ -6,8 +6,9 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import Menu from './components/Menu';
 import MobileMenu from './components/MobileMenu';
 import Carousel from "./components/Carousel";
-import Section1 from "./components/Section1"
-import Section2 from "./components/Section2"
+import Section1 from "./components/Section1";
+import Section2 from "./components/Section2";
+import SiteHalf from "./components/SiteHalf"
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Carousel/>
           <Section1/>
           <Section2/>
+          <SiteHalf/>
    </div>
    );
 }
