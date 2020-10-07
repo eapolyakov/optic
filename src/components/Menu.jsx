@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 
 function Menu() {
    return <div className="site-navbar-wrap js-site-navbar bg-white">
@@ -7,65 +8,98 @@ function Menu() {
             <div className="row align-items-center">
                <div className="col-2">
                   <h2 className="mb-0 site-logo">
-                     <a href="index.html" className="font-weight-bold">Яркий мир</a>
+                     <NavLink to="" className="font-weight-bold">Яркий мир</NavLink>
                   </h2>
                </div>
                <div className="col-10">
                   <nav className="site-navigation text-right" role="navigation">
                      <div className="container">
                         <div className="d-inline-block d-lg-none ml-md-0 mr-auto py-3">
-                           <a href="#" className="site-menu-toggle js-menu-toggle text-black">
+                           <NavLink to="#" className="site-menu-toggle js-menu-toggle text-black">
                               <span className="icon-menu h3"></span>
-                           </a>
+                           </NavLink>
                         </div>
                         <ul className="site-menu js-clone-nav d-none d-lg-block">
-                           <li className="active">
-                              <a href="index.html">Home</a>
+                           <li>
+                              <NavLink exact to="">Главная</NavLink>
                            </li>
                            <li className="has-children">
-                              <a href="insurance.html">Insurance</a>
+                              <NavLink to="catalog">Каталог</NavLink>
                               <ul className="dropdown arrow-top">
-                                 <li>
-                                    <a href="#">Home Insurance</a>
-                                 </li>
-                                 <li>
-                                    <a href="#">Auto Insurance</a>
-                                 </li>
-                                 <li>
-                                    <a href="#">Travel Insurance</a>
-                                 </li>
                                  <li className="has-children">
-                                    <a href="#">Sub Menus</a>
+                                    <NavLink to="rimsglasses">Оправы</NavLink>
                                     <ul className="dropdown">
                                        <li>
-                                          <a href="insurance.html">Home Insurance</a>
+                                          <NavLink to="#">1</NavLink>
                                        </li>
                                        <li>
-                                          <a href="insurance.html">Auto Insurance</a>
+                                          <NavLink to="#">2</NavLink>
                                        </li>
                                        <li>
-                                          <a href="insurance.html">Travel Insurance</a>
+                                          <NavLink to="#">3</NavLink>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li className="has-children">
+                                    <NavLink to="spectaclelenses">Линзы</NavLink>
+                                    <ul className="dropdown">
+                                       <li>
+                                          <NavLink to="insurance">1</NavLink>
+                                       </li>
+                                       <li>
+                                          <NavLink to="insurance">2</NavLink>
+                                       </li>
+                                       <li>
+                                          <NavLink to="insurance">3</NavLink>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li className="has-children">
+                                    <NavLink to="contactlenses">Контактные линзы</NavLink>
+                                    <ul className="dropdown">
+                                       <li>
+                                          <NavLink to="#">1</NavLink>
+                                       </li>
+                                       <li>
+                                          <NavLink to="#">2</NavLink>
+                                       </li>
+                                       <li>
+                                          <NavLink to="#">3</NavLink>
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li className="has-children">
+                                    <NavLink to="sunglasses">Солнцезащитные очки</NavLink>
+                                    <ul className="dropdown">
+                                       <li>
+                                          <NavLink to="#">1</NavLink>
+                                       </li>
+                                       <li>
+                                          <NavLink to="#">2</NavLink>
+                                       </li>
+                                       <li>
+                                          <NavLink to="#">3</NavLink>
                                        </li>
                                     </ul>
                                  </li>
                               </ul>
                            </li>
                            <li>
-                              <a href="services.html">Услуги</a>
+                              <NavLink to="services">Услуги</NavLink>
                            </li>
                            <li>
-                              <a href="blog.html">Новости</a>
+                              <NavLink to="news">Новости</NavLink>
                            </li>
                            <li>
-                              <a href="about.html">О нас</a>
+                              <NavLink to="about">О нас</NavLink>
                            </li>
                            <li>
-                              <a href="contact.html">Контакты</a>
+                              <NavLink to="contacts">Контакты</NavLink>
                            </li>
                            <li>
-                              <a href="contact.html">
-                                 <span className="d-inline-block p-3 bg-primary text-white btn btn-primary">Get A Quote</span>
-                              </a>
+                              <NavLink to="contacts">
+                                 <span className="d-inline-block p-3 bg-primary text-white btn btn-primary">Задать вопрос</span>
+                              </NavLink>
                            </li>
                         </ul>
                      </div>
