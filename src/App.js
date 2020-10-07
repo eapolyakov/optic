@@ -11,7 +11,9 @@ import Section2 from "./components/Section2";
 import SiteHalf from "./components/SiteHalf"
 import Section3 from "./components/Section3";
 import Section4 from "./components/Section4";
-
+import Reviews from "./components/Reviews";
+import PreFooter from "./components/PreFooter"
+import Footer from "./components/Footer";
 
 function App() {
    return (<div className="site-wrap">
@@ -24,6 +26,9 @@ function App() {
           <SiteHalf/>
           <Section3/>
           <Section4/>
+          <Reviews/>
+          <PreFooter/>
+          <Footer/>
       </BrowserRouter>
    </div>);
 }
