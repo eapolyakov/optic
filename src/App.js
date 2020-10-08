@@ -1,22 +1,24 @@
 import React from 'react';
-import {BrowserRouter, Route} from "react-router-dom"
+import {BrowserRouter, Route} from "react-router-dom";
 import Menu from './components/Menu';
 import MobileMenu from './components/MobileMenu';
 import Carousel from "./components/Carousel";
-import Section1 from "./components/Section1";
+import SectionCatalog from "./components/SectionCatalog";
 import Section2 from "./components/Section2";
 import SiteHalf from "./components/SiteHalf"
-import Section3 from "./components/Section3";
-import Section4 from "./components/Section4";
+import SectionIcons from "./components/SectionIcons";
+import SectionPromo from "./components/SectionPromo";
 import Reviews from "./components/Reviews";
 import PreFooter from "./components/PreFooter"
 import Footer from "./components/Footer";
 import ServiceSection1 from "./components/ServiceSection1";
 import ServiceSection2 from "./components/ServiceSection2";
-import NewsSection2 from "./components/NewsSection2";
+import NewsTopics from "./components/NewsTopics";
 import Contacts from "./components/Contacts";
+import CatalogPromo from "./components/CatalogPromo";
+import SectionLocations from "./components/SectionLocations";
 
-function App() {
+function App(props) {
    return (<div className="site-wrap">
       <BrowserRouter>
           <MobileMenu/>
@@ -24,12 +26,19 @@ function App() {
           <Route exact path="/" render={()=>{
               return <div>
                   <Carousel/>
-                  <Section1/>
+                  <SectionCatalog/>
                   <Section2/>
                   <SiteHalf/>
-                  <Section3/>
-                  <Section4/>
+                  <SectionIcons/>
+                  <SectionPromo/>
+                  <SectionLocations/>
                   <Reviews/>
+                  <PreFooter/>
+              </div>
+          }}/>
+          <Route path="/catalog" render={()=>{
+              return <div>
+                  <SectionCatalog/>
                   <PreFooter/>
               </div>
           }}/>
@@ -43,7 +52,7 @@ function App() {
           <Route path="/news" render={()=> {
               return <div>
                   <ServiceSection1 h1="Новости"/>
-                  <NewsSection2/>
+                  <NewsTopics getNews ={props.getNews}/>
                   <PreFooter/>
               </div>
           }}/>
@@ -58,8 +67,7 @@ function App() {
           }}/>
           <Route path="/contacts" render={()=> {
               return <div>
-                  <ServiceSection1 h1="Контакты"/>
-                  <Section3/>
+                  <SectionLocations/>
                   <Contacts/>
                   <PreFooter/>
               </div>

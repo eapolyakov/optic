@@ -1,6 +1,6 @@
 import React from "react";
 
-function Section3() {
+function SectionIcons() {
     return <div className="site-section">
         <div className="container">
             <div className="row mb-5">
@@ -43,4 +43,4 @@ function Section3() {
     </div>
 }
 
-export default Section3
+export default SectionIcons

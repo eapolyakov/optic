@@ -1,6 +1,6 @@
 import React from "react";
 
-function Section4() {
+function SectionPromo() {
     return <div className="site-section">
         <div className="container">
             <div className="row">
@@ -20,4 +20,4 @@ function Section4() {
     </div>
 }
 
-export default Section4;
+export default SectionPromo;
