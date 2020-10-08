@@ -14,41 +14,53 @@ function NewsItem(props){
    </div>
 }
 
-function NewsTopics(props) {
-    let news = props.getNews();
-    let newsCount = Object.keys(news).length;
-    let newsItems =[];
-    for (let i = 0; i < newsCount; i++) {
-        newsItems.push(<NewsItem
-            key={i}
-            title={news[i].title}
-            author={news[i].author}
-            date={news[i].date}
-            body={news[i].body}
-            img={news[i].img}
-        />)
+class News extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {newsItems: []};
     }
-    return <div className="site-section">
-        <div className="container">
-            <div className="row mb-5">
-                {newsItems}
-            </div>
+    componentDidMount() {
+        this.props.getNews().then(
+            news=>{
+                let newsCount = news.length;
+                let newsItems = [];
+                for (let i = 0; i < newsCount; i++) {
+                    newsItems.push(<NewsItem
+                        key={i}
+                        title={news[i].title}
+                        author={news[i].author}
+                        date={news[i].date}
+                        description={news[i].description}
+                        img={news[i].img}
+                    />)
+                }
+                this.setState({newsItems: newsItems})
+            }
+        )
+    }
+    render() {
+        return <div className="site-section">
+            <div className="container">
+                <div className="row mb-5">
+                    {this.state.newsItems}
+                </div>
 
-            <div className="row">
-                <div className="col-12 text-center">
-                    <div className="custom-pagination">
-                        <span className="current">1</span>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <span>...</span>
-                        <a href="#">14</a>
+                <div className="row">
+                    <div className="col-12 text-center">
+                        <div className="custom-pagination">
+                            <span className="current">1</span>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <span>...</span>
+                            <a href="#">14</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    }
 }
 
-export default NewsTopics;
+export default News;
