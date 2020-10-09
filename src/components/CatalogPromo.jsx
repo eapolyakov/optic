@@ -8,8 +8,7 @@ function CatalogPromo(){
                     <p className="mb-5"><img src="images/img_1.jpg" alt="Image" className="img-fluid"/></p>
                 </div>
                 <div className="col-lg-5 ml-auto">
-                    <h2 className="site-section-heading mb-3 font-secondary text-uppercase">Thousands of Houses Damage
-                        Each Year</h2>
+                    <h2 className="site-section-heading mb-3 font-secondary text-uppercase">Супер акция октября</h2>
                     <p className="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ad, tempora
                         incidunt accusantium. Similique magni quaerat beatae illo aliquid. Libero non ipsa nisi,
                         corporis architecto incidunt rem repellendus asperiores numquam!</p>

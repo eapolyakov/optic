@@ -27,17 +27,18 @@ function App(props) {
               return <div>
                   <Carousel/>
                   <SectionCatalog/>
+                  <SectionLocations/>
                   <Section2/>
                   <SiteHalf/>
                   <SectionIcons/>
                   <SectionPromo/>
-                  <SectionLocations/>
                   <Reviews/>
                   <PreFooter/>
               </div>
           }}/>
           <Route path="/catalog" render={()=>{
               return <div>
+                  <CatalogPromo/>
                   <SectionCatalog/>
                   <PreFooter/>
               </div>

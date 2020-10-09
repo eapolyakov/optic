@@ -9,9 +9,8 @@ function SectionCatalog(){
        <div className="container">
            <div className="row">
                <div className="col-md-12 text-center">
-                   <span className="caption d-block mb-2 font-secondary font-weight-bold">Products &amp; Services</span>
-                   <h2 className="site-section-heading text-uppercase text-center font-secondary">Insurance
-                       Coverage</h2>
+                   <span className="caption d-block mb-2 font-secondary font-weight-bold">Акции &amp; Скидки</span>
+                   <h2 className="site-section-heading text-uppercase text-center font-secondary">Выгодные предложения</h2>
                </div>
            </div>
                <OwlCarousel

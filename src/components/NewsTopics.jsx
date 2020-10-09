@@ -8,7 +8,7 @@ function NewsItem(props){
                 <h2 className="font-secondary text-uppercase">{props.title}</h2>
                 <span className="d-block mb-3">{props.author} &mdash; {props.date}</span>
                 <p>{props.body}</p>
-                <p><a href="#">Read More</a></p>
+                <p><a href="#">Подробнее</a></p>
             </div>
         </div>
    </div>
