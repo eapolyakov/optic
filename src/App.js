@@ -14,7 +14,7 @@ import Footer from "./components/Footer";
 import ServiceSection1 from "./components/ServiceSection1";
 import ServiceSection2 from "./components/ServiceSection2";
 import NewsTopics from "./components/NewsTopics";
-import Contacts from "./components/Contacts";
+import FeedBack from "./components/FeedBack";
 import CatalogPromo from "./components/CatalogPromo";
 import SectionLocations from "./components/SectionLocations";
 
@@ -53,7 +53,7 @@ function App(props) {
           <Route path="/news" render={()=> {
               return <div>
                   <ServiceSection1 h1="Новости"/>
-                  <NewsTopics getNews ={props.getNews}/>
+                  <NewsTopics getNews ={props.getNews} getTopic={props.getTopic}/>
                   <PreFooter/>
               </div>
           }}/>
@@ -69,7 +69,7 @@ function App(props) {
           <Route path="/contacts" render={()=> {
               return <div>
                   <SectionLocations/>
-                  <Contacts/>
+                  <FeedBack/>
                   <PreFooter/>
               </div>
           }}/>

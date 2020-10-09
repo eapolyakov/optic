@@ -1,4 +1,6 @@
 import React from "react";
+import {NavLink, Route} from "react-router-dom";
+import TopicContent from "./TopicContent";
 
 function NewsItem(props){
    return <div className="col-md-6 col-lg-4 mb-5">
@@ -7,8 +9,8 @@ function NewsItem(props){
             <div className="media-image-body">
                 <h2 className="font-secondary text-uppercase">{props.title}</h2>
                 <span className="d-block mb-3">{props.author} &mdash; {props.date}</span>
-                <p>{props.body}</p>
-                <p><a href="#">Подробнее</a></p>
+                <p>{props.description}</p>
+                <p><NavLink to={"/news/"+props.title.replaceAll(" ","_").replaceAll("#","№")}>Подробнее</NavLink></p>
             </div>
         </div>
    </div>
@@ -40,25 +42,33 @@ class News extends React.Component {
     }
     render() {
         return <div className="site-section">
-            <div className="container">
-                <div className="row mb-5">
-                    {this.state.newsItems}
-                </div>
+            <Route exact path = "/news" render ={()=>{
+                return <div className="container">
+                    <div className="row mb-5">
+                        {this.state.newsItems}
+                    </div>
 
-                <div className="row">
-                    <div className="col-12 text-center">
-                        <div className="custom-pagination">
-                            <span className="current">1</span>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <a href="#">4</a>
-                            <a href="#">5</a>
-                            <span>...</span>
-                            <a href="#">14</a>
+                    <div className="row">
+                        <div className="col-12 text-center">
+                            <div className="custom-pagination">
+                                <span className="current">1</span>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <span>...</span>
+                                <a href="#">14</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            }}/>
+
+            <Route path="/news/:article" render={(props)=>{
+                console.log(props)
+                return <TopicContent getTopic={this.props.getTopic}/>
+            }}/>
+
         </div>
     }
 }

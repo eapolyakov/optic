@@ -4,10 +4,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {getNews} from "./state";
+import {getTopic} from "./state";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App getNews={getNews}/>
+    <App getNews={getNews} getTopic={getTopic}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
