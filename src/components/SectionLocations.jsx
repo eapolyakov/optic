@@ -14,13 +14,8 @@ function SectionLocations() {
             <div className="row justify-content-center">
                 <div className="col-md-4 text-center">
                     <img src="images/podolsk.png" alt="Image" className="img-fluid w-25 mb-4"/>
-                        <h2 className="h5">г. Подольск</h2>
+                        <NavLink to="/podolsk"><h2 className="h5">г. Подольск</h2></NavLink>
                         <span className="d-block mb-4">ул. Кирова д.50/2</span>
-                    <YMaps>
-                        <div>
-                            <Map defaultState={{ center: [55.425824, 37.526429], zoom: 16 }} />
-                        </div>
-                    </YMaps>
                 </div>
                 <div className="col-md-4 text-center">
                     <img src="images/sherbinka.png" alt="Image" className="img-fluid w-25 mb-4"/>

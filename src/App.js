@@ -17,6 +17,7 @@ import NewsTopics from "./components/NewsTopics";
 import FeedBack from "./components/FeedBack";
 import CatalogPromo from "./components/CatalogPromo";
 import SectionLocations from "./components/SectionLocations";
+import Podolsk from "./components/Podolsk";
 
 function App(props) {
    return (<div className="site-wrap">
@@ -70,6 +71,12 @@ function App(props) {
               return <div>
                   <SectionLocations/>
                   <FeedBack/>
+                  <PreFooter/>
+              </div>
+          }}/>
+          <Route path="/podolsk" render={()=> {
+              return <div>
+                  <Podolsk/>
                   <PreFooter/>
               </div>
           }}/>

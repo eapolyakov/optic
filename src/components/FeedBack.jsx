@@ -1,4 +1,5 @@
 import React from "react";
+import CityContacts from "./CityContacts";
 
 class FeedBack extends React.Component{
     constructor(props) {
@@ -73,17 +74,7 @@ class FeedBack extends React.Component{
 
                         </form>
                     </div>
-                    <div className="col-lg-4">
-                        <div className="p-4 mb-3">
-                            <h3 className="h5 text-black mb-3">Контактная информация</h3>
-                            <p className="mb-0 font-weight-bold">Адрес</p>
-                            <p className="mb-4">Город, улица, дом</p>
-                            <p className="mb-0 font-weight-bold">Телефон</p>
-                            <p className="mb-4"><a href="#">+1 232 3235 324</a></p>
-                            <p className="mb-0 font-weight-bold">Email</p>
-                            <p className="mb-0"><a href="#">youremail@domain.com</a></p>
-                        </div>
-                    </div>
+                   <CityContacts address = "ул. Кирова д.50/2" phone = "+7(909)647-60-00" email = "snamiyarko@mail.ru"/>
                 </div>
             </div>
         </div>
