@@ -1,8 +1,10 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
+import {Map, YMaps} from 'react-yandex-maps';
 
 function SectionLocations() {
     return <div className="site-section"
-                style= "background-attachment: fixed" style = {{backgroundImage: "url(images/topography.png)"}}>
+                style = {{backgroundAttachment: "fixed"}} style = {{backgroundImage: "url(images/topography.png)"}}>
         <div className="container">
             <div className="row mb-5">
                 <div className="col-md-12">
@@ -11,28 +13,34 @@ function SectionLocations() {
             </div>
             <div className="row justify-content-center">
                 <div className="col-md-4 text-center">
-                    <img src="images/person_2.jpg" alt="Image" className="img-fluid rounded-circle w-25 mb-4"/>
-                        <h2 className="h5 ">Город1</h2>
-                        <span className="d-block mb-4">CEO, Co-Founder</span>
-                        <p className="font-weig mb-5 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Expedita et aliquam fuga dicta amet ad laborum error recusandae, voluptatibus quam minima
-                            sed, saepe odio voluptatem. Sed unde hic, vitae fugiat.</p>
+                    <img src="images/podolsk.png" alt="Image" className="img-fluid w-25 mb-4"/>
+                        <h2 className="h5">г. Подольск</h2>
+                        <span className="d-block mb-4">ул. Кирова д.50/2</span>
+                    <YMaps>
+                        <div>
+                            <Map defaultState={{ center: [55.425824, 37.526429], zoom: 16 }} />
+                        </div>
+                    </YMaps>
                 </div>
                 <div className="col-md-4 text-center">
-                    <img src="images/person_3.jpg" alt="Image" className="img-fluid rounded-circle w-25 mb-4"/>
-                        <h2 className="h5">Город2</h2>
-                        <span className="d-block mb-4">President, Co-Founder</span>
-                        <p className="font-weig mb-5 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Expedita et aliquam fuga dicta amet ad laborum error recusandae, voluptatibus quam minima
-                            sed, saepe odio voluptatem. Sed unde hic, vitae fugiat.</p>
+                    <img src="images/sherbinka.png" alt="Image" className="img-fluid w-25 mb-4"/>
+                        <h2 className="h5">г.о. Щербинка</h2>
+                        <span className="d-block mb-4">ул. 40 лет Октября д.3А</span>
+                    <YMaps>
+                        <div>
+                            <Map defaultState={{ center: [55.511139, 37.565210], zoom: 16 }} />
+                        </div>
+                    </YMaps>
                 </div>
                 <div className="col-md-4 text-center">
-                    <img src="images/person_3.jpg" alt="Image" className="img-fluid rounded-circle w-25 mb-4"/>
-                    <h2 className="h5">Город3</h2>
-                    <span className="d-block mb-4">President, Co-Founder</span>
-                    <p className="font-weig mb-5 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Expedita et aliquam fuga dicta amet ad laborum error recusandae, voluptatibus quam minima
-                        sed, saepe odio voluptatem. Sed unde hic, vitae fugiat.</p>
+                    <img src="images/sp.png" alt="Image" className="img-fluid w-25 mb-4"/>
+                    <h2 className="h5">г. Сергиев Посад</h2>
+                    <span className="d-block mb-4">пр-т Красной Армии д.12</span>
+                    <YMaps>
+                        <div>
+                            <Map defaultState={{ center: [56.297448, 38.129028], zoom: 16 }} />
+                        </div>
+                    </YMaps>
                 </div>
             </div>
         </div>
