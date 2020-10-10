@@ -1,5 +1,4 @@
 import React from "react";
-import CityContacts from "./CityContacts";
 
 class FeedBack extends React.Component{
     constructor(props) {
@@ -51,6 +50,19 @@ class FeedBack extends React.Component{
                                 </div>
                             </div>
                             <div className="row form-group">
+                                <div className="col-md-12 mb-3 mb-md-0">
+                                    <label className="font-weight-bold" htmlFor="phone">Тема сообщения</label>
+                                    <div className="">
+                                        <select>
+                                            <option selected="Отзыв">Отзыв</option>
+                                            <option value="Претензия">Претензия</option>
+                                            <option value="Вопрос">Вопрос</option>
+                                            <option value="Иное">Другое</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row form-group">
                                 <div className="col-md-12">
                                     <label className="font-weight-bold" htmlFor="message">Сообщение</label>
                                     <textarea name="text" id="message" cols="30" rows="5" className="form-control"
@@ -71,10 +83,8 @@ class FeedBack extends React.Component{
                                            className="btn btn-primary text-white px-4 py-2"/>
                                 </div>
                             </div>
-
                         </form>
                     </div>
-                   <CityContacts address = "ул. Кирова д.50/2" phone = "+7(909)647-60-00" email = "snamiyarko@mail.ru"/>
                 </div>
             </div>
         </div>

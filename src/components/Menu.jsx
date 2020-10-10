@@ -8,7 +8,7 @@ function Menu() {
             <div className="row align-items-center">
                <div className="col-2">
                   <h2 className="mb-0 site-logo">
-                     <NavLink to="" className="font-weight-bold">Яркий мир</NavLink>
+                     <NavLink to="/" className="font-weight-bold">Яркий мир</NavLink>
                   </h2>
                </div>
                <div className="col-10">

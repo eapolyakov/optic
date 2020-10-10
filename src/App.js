@@ -4,7 +4,7 @@ import Menu from './components/Menu';
 import MobileMenu from './components/MobileMenu';
 import Carousel from "./components/Carousel";
 import SectionCatalog from "./components/SectionCatalog";
-import Section2 from "./components/Section2";
+import SectionAbout from "./components/SectionAbout";
 import SiteHalf from "./components/SiteHalf"
 import SectionIcons from "./components/SectionIcons";
 import SectionPromo from "./components/SectionPromo";
@@ -17,7 +17,9 @@ import NewsTopics from "./components/NewsTopics";
 import FeedBack from "./components/FeedBack";
 import CatalogPromo from "./components/CatalogPromo";
 import SectionLocations from "./components/SectionLocations";
-import Podolsk from "./components/Podolsk";
+import LocationPodolsk from "./components/LocationPodolsk";
+import Sherbinka from "./components/LocationSherbinka";
+import SP from "./components/LocationSP";
 
 function App(props) {
    return (<div className="site-wrap">
@@ -29,7 +31,7 @@ function App(props) {
                   <Carousel/>
                   <SectionCatalog/>
                   <SectionLocations/>
-                  <Section2/>
+                  <SectionAbout/>
                   <SiteHalf/>
                   <SectionIcons/>
                   <SectionPromo/>
@@ -61,7 +63,7 @@ function App(props) {
           <Route path="/about" render={()=> {
               return <div>
                   <ServiceSection1 h1="О нас"/>
-                  <SiteHalf/>
+                  <SectionAbout/>
                   <Reviews/>
                   <SiteHalf/>
                   <PreFooter/>
@@ -76,7 +78,19 @@ function App(props) {
           }}/>
           <Route path="/podolsk" render={()=> {
               return <div>
-                  <Podolsk/>
+                  <LocationPodolsk/>
+                  <PreFooter/>
+              </div>
+          }}/>
+          <Route path="/sherbinka" render={()=> {
+              return <div>
+                  <Sherbinka/>
+                  <PreFooter/>
+              </div>
+          }}/>
+          <Route path="/sp" render={()=> {
+              return <div>
+                  <SP/>
                   <PreFooter/>
               </div>
           }}/>

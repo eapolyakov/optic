@@ -15,16 +15,16 @@ function Footer() {
                     <h3 className="footer-heading mb-4 text-white text-center">Наши адреса</h3>
                     <ul className="list-unstyled">
                         <li>
-                            <NavLink to="#">г. Подольск, ул. Кирова д.50/2</NavLink>
+                            <NavLink to="/podolsk">г. Подольск, ул. Кирова д.50/2</NavLink>
                         </li>
                         <li>
-                            <NavLink to="#">г. Сергиев Посад, пр-т Красной Армии д.12</NavLink>
+                            <NavLink to="sp">г. Сергиев Посад, пр-т Красной Армии д.12</NavLink>
                         </li>
                         <li>
-                            <NavLink to="#">г.о. Щербинка ул. 40 лет Октября д.3А</NavLink>
+                            <NavLink to="/sherbinka">г.о. Щербинка ул. 40 лет Октября д.3А</NavLink>
                         </li>
                     </ul>
-                    <p><NavLink to="#" className="btn btn-primary rounded text-white px-4">Подробнее</NavLink></p>
+                    <p><NavLink to="/contacts" className="btn btn-primary rounded text-white px-4">Подробнее</NavLink></p>
                 </div>
                 <div className="col-md-6 ml-auto">
                     <div className="row">
