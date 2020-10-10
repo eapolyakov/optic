@@ -12,13 +12,12 @@ function Carousel() {
         >
         <div className="item">
             <div className="site-blocks-cover inner-page overlay"
-                 data-aos="fade" data-stellar-background-ratio="0.5" style={{backgroundImage: "url(images/hero_bg_1.jpg)"}}>
+                 data-aos="fade" data-stellar-background-ratio="0.5" style={{backgroundImage: "url(images/bg_mir_2.jpg)"}}>
                 <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-md-6" data-aos="fade">
-                            <h1 className="font-secondary font-weight-bold text-uppercase">Small Business Insurance
-                                Agency</h1>
-                            <span className="caption d-block text-white">An Insurance Company</span>
+                    <div className="row align-items-end">
+                        <div className="col-md-12 p-5" data-aos="fade">
+                            <h1 className="font-secondary font-weight-bold text-uppercase">Мужские очки</h1>
+                            <span className="caption d-block text-white">Салон оптики Яркий Мир</span>
                         </div>
                     </div>
                 </div>
@@ -26,13 +25,25 @@ function Carousel() {
         </div>
         <div className="item">
             <div className="site-blocks-cover inner-page overlay"
-                 data-aos="fade" data-stellar-background-ratio="0.5" style={{backgroundImage: "url(images/hero_bg_2.jpg)"}}>
+                 data-aos="fade" data-stellar-background-ratio="0.6" style={{backgroundImage: "url(images/bg_mir_1.jpg)"}}>
                 <div className="container">
-                    <div className="row align-items-center justify-content-center">
-                        <div className="col-md-7 text-center" data-aos="fade">
-                            <h1 className="font-secondary font-weight-bold text-uppercase">Insurance Coverage To Meet Your
-                                Needs</h1>
-                            <span className="caption d-block text-white">You Will Love Our Services</span>
+                    <div className="row align-items-end justify-content-center">
+                        <div className="col-md-12 p-5" data-aos="fade">
+                            <h1 className="font-secondary font-weight-bold text-uppercase">Мужские и женские очки</h1>
+                            <span className="caption d-block text-white">Салон оптики</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className="item">
+            <div className="site-blocks-cover inner-page overlay"
+                 data-aos="fade" data-stellar-background-ratio="0.5" style={{backgroundImage: "url(images/bg_mir_3.jpg)"}}>
+                <div className="container">
+                    <div className="row align-items-end">
+                        <div className="col-md-12 p-5" data-aos="fade">
+                            <h1 className="font-secondary font-weight-bold text-uppercase">Солнцезащитные очки</h1>
+                            <span className="caption d-block text-white">Последняя коллекция</span>
                         </div>
                     </div>
                 </div>

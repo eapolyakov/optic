@@ -18,7 +18,7 @@ function Footer() {
                             <NavLink to="/podolsk">г. Подольск, ул. Кирова д.50/2</NavLink>
                         </li>
                         <li>
-                            <NavLink to="sp">г. Сергиев Посад, пр-т Красной Армии д.12</NavLink>
+                            <NavLink to="/sp">г. Сергиев Посад, пр-т Красной Армии д.12</NavLink>
                         </li>
                         <li>
                             <NavLink to="/sherbinka">г.о. Щербинка ул. 40 лет Октября д.3А</NavLink>

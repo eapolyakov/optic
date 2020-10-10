@@ -1,6 +1,6 @@
 import React from "react";
 
-function ServiceSection1(props){
+function Picture(props){
     return <div className="site-blocks-cover inner-page overlay" style={{backgroundImage: "url(images/hero_bg_1.jpg)"}}
                 data-aos="fade" data-stellar-background-ratio="0.5">
         <div className="row align-items-center justify-content-center">
@@ -12,4 +12,4 @@ function ServiceSection1(props){
     </div>
 }
 
-export default ServiceSection1;
+export default Picture;

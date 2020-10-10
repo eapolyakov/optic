@@ -11,8 +11,8 @@ import SectionPromo from "./components/SectionPromo";
 import Reviews from "./components/Reviews";
 import PreFooter from "./components/PreFooter"
 import Footer from "./components/Footer";
-import ServiceSection1 from "./components/ServiceSection1";
-import ServiceSection2 from "./components/ServiceSection2";
+import Picture from "./components/Picture";
+import SectionServises from "./components/SectionServises";
 import NewsTopics from "./components/NewsTopics";
 import FeedBack from "./components/FeedBack";
 import CatalogPromo from "./components/CatalogPromo";
@@ -47,21 +47,21 @@ function App(props) {
           }}/>
           <Route path="/services" render={()=>{
               return <div>
-                  <ServiceSection1 h1="Наши услуги"/>
-                  <ServiceSection2/>
+                  <Picture h1="Наши услуги"/>
+                  <SectionServises/>
                   <PreFooter/>
               </div>
           }}/>
           <Route path="/news" render={()=> {
               return <div>
-                  <ServiceSection1 h1="Новости"/>
+                  <Picture h1="Новости"/>
                   <NewsTopics getNews ={props.getNews} getTopic={props.getTopic}/>
                   <PreFooter/>
               </div>
           }}/>
           <Route path="/about" render={()=> {
               return <div>
-                  <ServiceSection1 h1="О нас"/>
+                  <Picture h1="О нас"/>
                   <SectionAbout/>
                   <Reviews/>
                   <SiteHalf/>
