@@ -7,9 +7,7 @@ function Menu() {
          <div className="site-navbar bg-light">
             <div className="row align-items-center">
                <div className="col-2">
-                  <h2 className="mb-0 site-logo">
-                     <NavLink to="/" className="font-weight-bold">Яркий мир</NavLink>
-                  </h2>
+                  <NavLink to="/" className="font-weight-bold"><img src="images/logo.png" width="150%"/></NavLink>
                </div>
                <div className="col-10">
                   <nav className="site-navigation text-right" role="navigation">
@@ -24,80 +22,89 @@ function Menu() {
                               <NavLink exact to="">Главная</NavLink>
                            </li>
                            <li className="has-children">
-                              <NavLink to="catalog">Каталог</NavLink>
+                              <NavLink to="/catalog">Каталог</NavLink>
                               <ul className="dropdown arrow-top">
                                  <li className="has-children">
-                                    <NavLink to="rimsglasses">Оправы</NavLink>
+                                    <NavLink to="/rimsglasses">Оправы</NavLink>
                                     <ul className="dropdown">
                                        <li>
-                                          <NavLink to="#">1</NavLink>
+                                          <NavLink to="#">Женские</NavLink>
                                        </li>
                                        <li>
-                                          <NavLink to="#">2</NavLink>
+                                          <NavLink to="#">Мужские</NavLink>
                                        </li>
                                        <li>
-                                          <NavLink to="#">3</NavLink>
+                                          <NavLink to="#">Детские</NavLink>
                                        </li>
                                     </ul>
                                  </li>
                                  <li className="has-children">
-                                    <NavLink to="spectaclelenses">Линзы</NavLink>
+                                    <NavLink to="/spectaclelenses">Очковые линзы</NavLink>
                                     <ul className="dropdown">
                                        <li>
-                                          <NavLink to="insurance">1</NavLink>
+                                          <NavLink to="#">Монофокальные</NavLink>
                                        </li>
                                        <li>
-                                          <NavLink to="insurance">2</NavLink>
+                                          <NavLink to="#">Прогрессивные</NavLink>
                                        </li>
                                        <li>
-                                          <NavLink to="insurance">3</NavLink>
+                                          <NavLink to="#">Фотохромные</NavLink>
                                        </li>
                                     </ul>
                                  </li>
                                  <li className="has-children">
-                                    <NavLink to="contactlenses">Контактные линзы</NavLink>
+                                    <NavLink to="/contactlenses">Контактные линзы</NavLink>
                                     <ul className="dropdown">
                                        <li>
-                                          <NavLink to="#">1</NavLink>
+                                          <NavLink to="">Однодневные</NavLink>
                                        </li>
                                        <li>
-                                          <NavLink to="#">2</NavLink>
+                                          <NavLink to="#">Двухнедельные</NavLink>
                                        </li>
                                        <li>
-                                          <NavLink to="#">3</NavLink>
+                                          <NavLink to="#">Ежемесячные</NavLink>
+                                       </li>
+                                       <li>
+                                          <NavLink to="#">Ежеквартальные</NavLink>
+                                       </li>
+                                       <li>
+                                          <NavLink to="#">Полугодовые</NavLink>
+                                       </li>
+                                       <li>
+                                          <NavLink to="#">Цветные</NavLink>
                                        </li>
                                     </ul>
                                  </li>
                                  <li className="has-children">
-                                    <NavLink to="sunglasses">Солнцезащитные очки</NavLink>
+                                    <NavLink to="/sunglasses">Солнцезащитные очки</NavLink>
                                     <ul className="dropdown">
                                        <li>
-                                          <NavLink to="#">1</NavLink>
+                                          <NavLink to="#">Женские</NavLink>
                                        </li>
                                        <li>
-                                          <NavLink to="#">2</NavLink>
+                                          <NavLink to="#">Мужские</NavLink>
                                        </li>
                                        <li>
-                                          <NavLink to="#">3</NavLink>
+                                          <NavLink to="#">Детские</NavLink>
                                        </li>
                                     </ul>
                                  </li>
                               </ul>
                            </li>
                            <li>
-                              <NavLink to="services">Услуги</NavLink>
+                              <NavLink to="/services">Услуги</NavLink>
                            </li>
                            <li>
-                              <NavLink to="news">Новости</NavLink>
+                              <NavLink to="/news">Новости</NavLink>
                            </li>
                            <li>
-                              <NavLink to="about">О нас</NavLink>
+                              <NavLink to="/about">О нас</NavLink>
                            </li>
                            <li>
-                              <NavLink to="contacts">Контакты</NavLink>
+                              <NavLink to="/contacts">Контакты</NavLink>
                            </li>
                            <li>
-                              <NavLink to="contacts">
+                              <NavLink to="/contacts">
                                  <span className="d-inline-block p-3 bg-primary text-white btn btn-primary">Задать вопрос</span>
                               </NavLink>
                            </li>

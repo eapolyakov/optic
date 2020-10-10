@@ -25,7 +25,7 @@ class FeedBack extends React.Component{
     }
 
     render(){
-        return <div className="py-5 " style = {{backgroundAttachment: "fixed"}} style = {{backgroundImage: "url(images/topography.png)"}}>
+        return <div className="py-5" style = {{backgroundAttachment: "fixed"}} style = {{backgroundImage: "url(images/topography.png)"}}>
             <div className="container">
                 <div className="row">
                     <div className="col-md-12 col-lg-8 mb-5">

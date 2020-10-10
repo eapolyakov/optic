@@ -31,7 +31,6 @@ function App(props) {
                   <Carousel/>
                   <SectionCatalog/>
                   <SectionLocations/>
-                  <SectionAbout/>
                   <SiteHalf/>
                   <SectionIcons/>
                   <SectionPromo/>

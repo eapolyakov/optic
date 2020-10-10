@@ -12,7 +12,7 @@ function CatalogPromo(){
                     <p className="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ad, tempora
                         incidunt accusantium. Similique magni quaerat beatae illo aliquid. Libero non ipsa nisi,
                         corporis architecto incidunt rem repellendus asperiores numquam!</p>
-                    <p><a href="#" className="btn btn-outline-primary py-2 px-4">Insured Yours Now</a></p>
+                    <p><a href="#" className="btn btn-outline-primary py-2 px-4">Есть вопросы?</a></p>
                 </div>
             </div>
         </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
-import {Map, YMaps} from 'react-yandex-maps';
 
 function SectionLocations() {
     return <div className="site-section"
