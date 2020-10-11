@@ -28,7 +28,10 @@ function LocationPodolsk() {
                 </YMaps>
             </div>
             <div className="col-md-4 text-right">
-                <CityContacts address = "ул. Кирова д.50/2" phone = "+7(909)647-60-00" email = "snamiyarko@mail.ru" time = "Ежедневно с 10:00 до 20:00"/>
+                <CityContacts address = "ул. Кирова д.50/2"
+                              phone = "+7(909)647-60-00"
+                              email = "snamiyarko@mail.ru"
+                              time = "Ежедневно с 10:00 до 20:00"/>
             </div>
         </div>
     </div>

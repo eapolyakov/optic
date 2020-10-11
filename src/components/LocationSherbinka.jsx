@@ -7,7 +7,7 @@ const mapState = {
     zoom: 15
 };
 
-function Sherbinka() {
+function LocationSherbinka() {
     return <div className="container">
         <div className="row">
             <div className="col-md-8 p-4">
@@ -34,4 +34,4 @@ function Sherbinka() {
     </div>
 }
 
-export default Sherbinka;
+export default LocationSherbinka;

@@ -18,8 +18,8 @@ import FeedBack from "./components/FeedBack";
 import CatalogPromo from "./components/CatalogPromo";
 import SectionLocations from "./components/SectionLocations";
 import LocationPodolsk from "./components/LocationPodolsk";
-import Sherbinka from "./components/LocationSherbinka";
-import SP from "./components/LocationSP";
+import LocationSherbinka from "./components/LocationSherbinka";
+import LocationSP from "./components/LocationSP";
 
 function App(props) {
    return (<div className="site-wrap">
@@ -75,21 +75,21 @@ function App(props) {
                   <PreFooter/>
               </div>
           }}/>
-          <Route path="/podolsk" render={()=> {
+          <Route exact path="/contacts_podolsk" render={()=> {
               return <div>
                   <LocationPodolsk/>
                   <PreFooter/>
               </div>
           }}/>
-          <Route path="/sherbinka" render={()=> {
+          <Route exact path="/contacts_sherbinka" render={()=> {
               return <div>
-                  <Sherbinka/>
+                  <LocationSherbinka/>
                   <PreFooter/>
               </div>
           }}/>
-          <Route path="/sp" render={()=> {
+          <Route exact path="/contacts_sp" render={()=> {
               return <div>
-                  <SP/>
+                  <LocationSP/>
                   <PreFooter/>
               </div>
           }}/>

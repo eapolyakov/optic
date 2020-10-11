@@ -7,7 +7,7 @@ const mapState = {
     zoom: 15
 };
 
-function SP() {
+function LocationSP() {
     return <div className="container">
         <div className="row">
             <div className="col-md-8 p-4">
@@ -34,4 +34,4 @@ function SP() {
     </div>
 }
 
-export default SP;
+export default LocationSP;
