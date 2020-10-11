@@ -64,7 +64,7 @@ class News extends React.Component {
                 </div>
             }}/>
 
-            <Route path="/news/:article" render={(props)=>{
+            <Route path="/news/:title" render={(props)=>{
                 console.log(props)
                 return <TopicContent getTopic={this.props.getTopic}/>
             }}/>

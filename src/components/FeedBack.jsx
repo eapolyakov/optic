@@ -1,59 +1,71 @@
 import React from "react";
 
-class FeedBack extends React.Component{
+export default class FeedBack extends React.Component{
     constructor(props) {
         super(props);
-        this.state = {value: ''};
+        this.state = {
+            text: '',
+            name: '',
+            email: '',
+            topic: '',
+        };
         this.handleChange = this.handleChange.bind(this);
         this.sendMail = this.sendMail.bind(this);
     }
 
-    handleChange(event){
-        this.setState({value: event.target.value});
+    handleChange(event) {
+        const target = event.target;
+        const value = target.type;
+        const name = target.name;
+
+        this.setState({
+            [name]: value});
     }
 
     sendMail(event){
         let formData = new FormData();
         formData.append("text", this.state.value);
+        formData.append("name", this.state.value);
+        formData.append("email", this.state.value);
+        formData.append("topic", this.state.value);
         fetch("http://edu.eapolyak.beget.tech/sendMail",{
             method: "POST",
             body: formData
         });
         event.preventDefault();
         return alert("Сообщение отправлено!");
-        this.state = {value: ''};
     }
 
     render(){
-        return <div className="py-5" style = {{backgroundAttachment: "fixed"}} style = {{backgroundImage: "url(images/topography.png)"}}>
+        return <div className="mr-auto" style = {{backgroundAttachment: "fixed", background: "url(images/topography.png)"}}>
             <div className="container">
                 <div className="row">
                     <div className="col-md-12 col-lg-8 mb-5">
                         <h5 className="text-center">Напишите нам</h5>
-                        <form action="#" className="p-5" onSubmit={this.sendMail}>
+                        <form action="http://edu.eapolyak.beget.tech/sendMail" className="p-5" onSubmit={this.sendMail}>
                             <div className="row form-group">
                                 <div className="col-md-12 mb-3 mb-md-0">
                                     <label className="font-weight-bold" htmlFor="fullname">Имя</label>
-                                    <input type="text" id="fullname" className="form-control" placeholder="Ваше имя" onChange={this.handleChange}/>
+                                    <input type="text" name="name" id="fullname" className="form-control" placeholder="Ваше имя" onChange={this.handleChange}/>
                                 </div>
                             </div>
                             <div className="row form-group">
                                 <div className="col-md-12">
                                     <label className="font-weight-bold" htmlFor="email">Email</label>
-                                    <input type="email" id="email" className="form-control" placeholder="Ваш email" onChange={this.handleChange}/>
+                                    <input type="email" name="email" id="email" className="form-control" placeholder="Ваш email" onChange={this.handleChange}/>
                                 </div>
                             </div>
                             <div className="row form-group">
                                 <div className="col-md-12 mb-3 mb-md-0">
                                     <label className="font-weight-bold" htmlFor="phone">Телефон</label>
-                                    <input type="text" id="phone" className="form-control" placeholder="Номер телефона" onChange={this.handleChange}/>
+                                    <input type="text" name="phone" id="phone" className="form-control" placeholder="Номер телефона" onChange={this.handleChange}/>
                                 </div>
                             </div>
                             <div className="row form-group">
                                 <div className="col-md-12 mb-3 mb-md-0">
-                                    <label className="font-weight-bold" htmlFor="phone">Тема сообщения</label>
+                                    <label className="font-weight-bold">Тема сообщения</label>
                                     <div className="">
-                                        <select>
+                                        <select className="btn btn-primary text-white" name="topic" onChange={this.handleChange}>
                                             <option selected="Отзыв">Отзыв</option>
                                             <option value="Претензия">Претензия</option>
                                             <option value="Вопрос">Вопрос</option>
@@ -90,5 +102,3 @@ class FeedBack extends React.Component{
         </div>
     }
 }
-
-export default FeedBack;

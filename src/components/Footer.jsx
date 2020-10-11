@@ -15,13 +15,13 @@ function Footer() {
                     <h3 className="footer-heading mb-4 text-white text-center">Наши адреса</h3>
                     <ul className="list-unstyled">
                         <li>
-                            <NavLink to="/podolsk">г. Подольск, ул. Кирова д.50/2</NavLink>
+                            <NavLink to="/contacts/podolsk">г. Подольск, ул. Кирова д.50/2</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/sp">г. Сергиев Посад, пр-т Красной Армии д.12</NavLink>
+                            <NavLink to="/contacts/sp">г. Сергиев Посад, пр-т Красной Армии д.12</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/sherbinka">г.о. Щербинка ул. 40 лет Октября д.3А</NavLink>
+                            <NavLink to="/contacts/sherbinka">г.о. Щербинка ул. 40 лет Октября д.3А</NavLink>
                         </li>
                     </ul>
                     <p><NavLink to="/contacts" className="btn btn-primary rounded text-white px-4">Подробнее</NavLink></p>
@@ -33,15 +33,15 @@ function Footer() {
                             <div className="row">
                                 <div className="col-md-6">
                                     <ul className="list-unstyled">
-                                    <li><NavLink to="#">Домой</NavLink></li>
-                                    <li><NavLink to="#">О нас</NavLink></li>
-                                    <li><NavLink to="#">Услуги</NavLink></li>
+                                    <li><NavLink to="/">Домой</NavLink></li>
+                                    <li><NavLink to="/about">О нас</NavLink></li>
+                                    <li><NavLink to="/services">Услуги</NavLink></li>
                                     </ul>
                                 </div>
                                 <div className="col-md-6">
                                     <ul className="list-unstyled">
-                                    <li><NavLink to="#">Новости</NavLink></li>
-                                    <li><NavLink to="#">Контакты</NavLink></li>
+                                    <li><NavLink to="/news#">Новости</NavLink></li>
+                                    <li><NavLink to="/contacts">Контакты</NavLink></li>
                                     <li><NavLink to="#">Оферта</NavLink></li>
                                 </ul>
                                 </div>

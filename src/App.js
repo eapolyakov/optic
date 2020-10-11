@@ -75,24 +75,6 @@ function App(props) {
                   <PreFooter/>
               </div>
           }}/>
-          <Route exact path="/contacts_podolsk" render={()=> {
-              return <div>
-                  <LocationPodolsk/>
-                  <PreFooter/>
-              </div>
-          }}/>
-          <Route exact path="/contacts_sherbinka" render={()=> {
-              return <div>
-                  <LocationSherbinka/>
-                  <PreFooter/>
-              </div>
-          }}/>
-          <Route exact path="/contacts_sp" render={()=> {
-              return <div>
-                  <LocationSP/>
-                  <PreFooter/>
-              </div>
-          }}/>
           <Footer/>
       </BrowserRouter>
    </div>)
