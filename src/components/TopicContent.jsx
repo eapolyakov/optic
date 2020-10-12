@@ -11,7 +11,7 @@ class TopicContent extends React.Component{
         endPath = endPath.replaceAll("№", "#").replaceAll("_", " ");
             this.props.getTopic(endPath).then(
                 topic => {
-                    this.setState({content: topic.description})
+                    this.setState({content: topic.article})
                 }
             )
         }

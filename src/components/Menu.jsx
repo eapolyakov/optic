@@ -4,11 +4,11 @@ import {NavLink} from "react-router-dom";
 function Menu() {
    return <div className="site-navbar-wrap js-site-navbar bg-primary">
       <div className="container">
-         <div className="site-navbar bg-primary">
+         <div className="site-navbar bg-light">
             <div className="row align-items-center">
-               <div className="col-2 bg-primary">
+               <div className="col-2 bg-light">
                   <NavLink to="/" className="font-weight-bold">
-                     <img className="bg-primary" src="images/logo.png" />
+                     <img className="bg-light" src="images/logo.png" />
                   </NavLink>
                </div>
                <div className="col-10">

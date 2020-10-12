@@ -47,21 +47,21 @@ function App(props) {
           }}/>
           <Route path="/services" render={()=>{
               return <div>
-                  <Picture h1="Наши услуги"/>
+                  <Picture h1="Наши услуги"image="images/bg_mir_6.jpg"/>
                   <SectionServises/>
                   <PreFooter/>
               </div>
           }}/>
           <Route path="/news" render={()=> {
               return <div>
-                  <Picture h1="Новости"/>
+                  <Picture h1="Новости" image="images/bg_girl_1.jpg"/>
                   <NewsTopics getNews ={props.getNews} getTopic={props.getTopic}/>
                   <PreFooter/>
               </div>
           }}/>
           <Route path="/about" render={()=> {
               return <div>
-                  <Picture h1="О нас"/>
+                  <Picture h1="О нас" image="images/bg_mir_5.jpg"/>
                   <SectionAbout/>
                   <Reviews/>
                   <SiteHalf/>
