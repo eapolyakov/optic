@@ -17,9 +17,7 @@ import NewsTopics from "./components/NewsTopics";
 import FeedBack from "./components/FeedBack";
 import CatalogPromo from "./components/CatalogPromo";
 import SectionLocations from "./components/SectionLocations";
-import LocationPodolsk from "./components/LocationPodolsk";
-import LocationSherbinka from "./components/LocationSherbinka";
-import LocationSP from "./components/LocationSP";
+import FormContainer from "./components/FormContainer";
 
 function App(props) {
    return (<div className="site-wrap">
@@ -68,10 +66,10 @@ function App(props) {
                   <PreFooter/>
               </div>
           }}/>
-          <Route path="/contacts" render={()=> {
+          <Route path="/form" render={()=> {
               return <div>
                   <SectionLocations/>
-                  <FeedBack/>
+                  <FormContainer/>
                   <PreFooter/>
               </div>
           }}/>

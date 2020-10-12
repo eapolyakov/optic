@@ -4,10 +4,13 @@ export default class FeedBack extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            text: '',
-            name: '',
-            email: '',
-            topic: '',
+            SendMail:{
+                text: '',
+                name: '',
+                email: '',
+                topic: ''
+            },
+            topicOptions: ['Отзыв','Вопрос','Претензия','Иное']
         }
         this.handleChange = this.handleChange.bind(this);
         this.sendMail = this.sendMail.bind(this);
@@ -17,12 +20,12 @@ export default class FeedBack extends React.Component{
         const target = event.target;
         const value = target.type;
         const name = target.name;
-
         this.setState({
             [name]: value});
     }
 
     sendMail(event){
+        event.preventDefault();
         let formData = new FormData();
         formData.append("text", this.state.value);
         formData.append("name", this.state.value);
@@ -32,7 +35,6 @@ export default class FeedBack extends React.Component{
             method: "POST",
             body: formData
         });
-        event.preventDefault();
         return alert("Сообщение отправлено!");
     }
 
