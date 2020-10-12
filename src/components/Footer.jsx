@@ -66,7 +66,7 @@ function Footer() {
                     </div>
                     <div className="col-md-12">
                         <p className="pt-4 pl-0">
-                            <NavLink to="/form" className="pb-2 pr-0"><i className="fab fa-facebook-f fa-2x"></i></NavLink>
+                            <NavLink to="#" className="pb-2 pr-0"><i className="fab fa-facebook-f fa-2x"></i></NavLink>
                             <NavLink to="#" className="p-1"><i className="fab fa-instagram fa-2x"></i></NavLink>
                             <NavLink to="#" className="p-1"><i className="fab fa-vk fa-2x"></i></NavLink>
                             <NavLink to="#" className="p-1"><i className="fab fa-odnoklassniki fa-2x"></i></NavLink>

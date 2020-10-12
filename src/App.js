@@ -66,7 +66,7 @@ function App(props) {
                   <PreFooter/>
               </div>
           }}/>
-          <Route path="/form" render={()=> {
+          <Route path="/contacts" render={()=> {
               return <div>
                   <SectionLocations/>
                   <FormContainer/>

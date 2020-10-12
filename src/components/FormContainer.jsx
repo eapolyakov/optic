@@ -74,8 +74,7 @@ export default class FormContainer extends React.Component {
             method: "POST",
             body: JSON.stringify(userData),
             headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
+                'Accept': 'application/json'
             },
         }).then(response => {
             response.json().then(data =>{
@@ -99,56 +98,62 @@ export default class FormContainer extends React.Component {
 
     render() {
         return (
+            <div className="mr-auto" style = {{backgroundAttachment: "fixed", background: "url(images/topography.png)"}}>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12 col-lg-8 mb-5">
+                            <h5 className="text-center">Напишите нам</h5>
+                            <form className="container-fluid" onSubmit={this.handleSendMail}>
+                                <Input inputType={'text'}
+                                       name= {'name'}
+                                       title= {'Имя'}
+                                       value={this.state.SendMail.name}
+                                       placeholder = {'Введите Ваше имя'}
+                                       handleChange = {this.handleFullName}
 
-            <form className="container-fluid" onSubmit={this.handleSendMail}>
-
-                <Input inputType={'text'}
-                       name= {'name'}
-                       title= {'Имя'}
-                       value={this.state.SendMail.name}
-                       placeholder = {'Введите Ваше имя'}
-                       handleChange = {this.handleFullName}
-
-                />
-                <Input inputType={'Email'}
-                       name={'email'}
-                       title= {'Email'}
-                       value={this.state.SendMail.email}
-                       placeholder = {'Введите Ваш email'}
-                       handleChange={this.handleEmail} />
+                                />
+                                <Input inputType={'Email'}
+                                       name={'email'}
+                                       title= {'Email'}
+                                       value={this.state.SendMail.email}
+                                       placeholder = {'Введите Ваш email'}
+                                       handleChange={this.handleEmail} />
 
 
-                <Select title={'Тема обращения'}
-                        name={'topic'}
-                        options = {this.state.topicOptions}
-                        value = {this.state.SendMail.topic}
-                        placeholder = {'Выбрать тему'}
-                        handleChange = {this.handleTopic}
-                />
-                <TextArea
-                    title={'Сообщение'}
-                    name={'text'}
-                    rows={10}
-                    value={this.state.SendMail.text}
-                    placeholder={'Введите текст'}
-                    handleChange={this.handleTextArea}
+                                <Select title={'Тема обращения'}
+                                        name={'topic'}
+                                        options = {this.state.topicOptions}
+                                        value = {this.state.SendMail.topic}
+                                        placeholder = {'Выбрать тему'}
+                                        handleChange = {this.handleTopic}
+                                />
+                                <TextArea
+                                    title={'Сообщение'}
+                                    name={'text'}
+                                    rows={10}
+                                    value={this.state.SendMail.text}
+                                    placeholder={'Введите текст'}
+                                    handleChange={this.handleTextArea}
 
-                />
-                <Button
-                    action = {this.handleSendMail}
-                    type = {'primary'}
-                    title = {'Отправить'}
-                    style={buttonStyle}
-                />
+                                />
+                                <Button
+                                    action = {this.handleSendMail}
+                                    type = {'primary'}
+                                    title = {'Отправить'}
+                                    style={buttonStyle}
+                                />
 
-                <Button
-                    action = {this.handleClearForm}
-                    type = {'secondary'}
-                    title = {'Очистить'}
-                    style={buttonStyle}
-                />
-            </form>
-
+                                <Button
+                                    action = {this.handleClearForm}
+                                    type = {'secondary'}
+                                    title = {'Очистить'}
+                                    style={buttonStyle}
+                                />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         );
     }
 }
