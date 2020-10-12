@@ -8,7 +8,7 @@ export default class FeedBack extends React.Component{
             name: '',
             email: '',
             topic: '',
-        };
+        }
         this.handleChange = this.handleChange.bind(this);
         this.sendMail = this.sendMail.bind(this);
     }

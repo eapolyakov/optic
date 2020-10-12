@@ -2,6 +2,7 @@ import React from "react";
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.min.css';
+import {Link} from "react-router-dom";
 
 
 function SectionCatalog(){
@@ -14,57 +15,57 @@ function SectionCatalog(){
                </div>
            </div>
                <OwlCarousel
-                   className="owl-theme"
+                   className="owl-stage-outer"
                    items="3"
                    autoplay
                    loop
                    margin={5}
                >
-                   <div className="media-image">
-                       <img src="images/img_1.jpg" alt="Image" className="img-fluid"/>
-                       <div className="media-image-body">
-                           <h2 className="font-secondary text-uppercase">Бесплатная проверка зрения</h2>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
-                           <p><a href="#" className="btn btn-primary text-white px-4"><span className="caption">Хочу проверить</span></a>
-                           </p>
-                       </div>
-                   </div>
-                   <div className="media-image">
-                       <img src="images/img_2.jpg" alt="Image" className="img-fluid"/>
-                       <div className="media-image-body">
-                           <h2 className="font-secondary text-uppercase">Очки за 660 рублей</h2>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
-                           <p><a href="#" className="btn btn-primary text-white px-4"><span className="caption">Уточнить условия</span></a>
-                           </p>
-                       </div>
-                   </div>
-                   <div className="media-image">
-                       <img src="images/img_3.jpg" alt="Image" className="img-fluid"/>
-                       <div className="media-image-body">
-                           <h2 className="font-secondary text-uppercase">Вторые очки за пол цены</h2>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
-                           <p><a href="#" className="btn btn-primary text-white px-4"><span className="caption">Узнать больше</span></a>
-                           </p>
-                       </div>
-                   </div>
-                   <div className="media-image">
-                       <img src="images/img_1.jpg" alt="Image" className="img-fluid"/>
-                       <div className="media-image-body">
-                           <h2 className="font-secondary text-uppercase">Дисконтная карта</h2>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
-                           <p><a href="#" className="btn btn-primary text-white px-4"><span className="caption">Хочу получить</span></a>
-                           </p>
-                       </div>
-                   </div>
-                   <div className="media-image">
-                       <img src="images/img_2.jpg" alt="Image" className="img-fluid"/>
-                       <div className="media-image-body">
-                           <h2 className="font-secondary text-uppercase">Распродажа солцезащитных очков</h2>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
-                           <p><a href="#" className="btn btn-primary text-white px-4"><span className="caption">Успеть купить</span></a>
-                           </p>
-                       </div>
-                   </div>
+                           <div className="media-image">
+                               <img src="images/img_1.jpg" alt="Image" className="img-fluid"/>
+                               <div className="media-image-body">
+                                   <h2 className="font-secondary text-uppercase">Бесплатная проверка зрения</h2>
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                                   <p><Link to="/contacts" className="btn btn-primary text-white px-4"><span className="caption">Хочу проверить</span></Link>
+                                   </p>
+                               </div>
+                           </div>
+                           <div className="media-image">
+                               <img src="images/ochki620.jpg" alt="Image" className="img-fluid"/>
+                               <div className="media-image-body">
+                                   <h2 className="font-secondary text-uppercase">Очки за 620 рублей</h2>
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                                   <p><Link to="/contacts" className="btn btn-primary text-white px-4"><span className="caption">Уточнить условия</span></Link>
+                                   </p>
+                               </div>
+                           </div>
+                           <div className="media-image">
+                               <img src="images/sale50.png" alt="Image" className="img-fluid"/>
+                               <div className="media-image-body">
+                                   <h2 className="font-secondary text-uppercase">Вторые очки за пол цены</h2>
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                                   <p><Link to="/contacts" className="btn btn-primary text-white px-4"><span className="caption">Узнать больше</span></Link>
+                                   </p>
+                               </div>
+                           </div>
+                           <div className="media-image">
+                               <img src="images/card.jpg" alt="Image" className="img-fluid"/>
+                               <div className="media-image-body">
+                                   <h2 className="font-secondary text-uppercase">Дисконтная карта</h2>
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                                   <p><Link to="/contacts" className="btn btn-primary text-white px-4"><span className="caption">Хочу получить</span></Link>
+                                   </p>
+                               </div>
+                           </div>
+                           <div className="media-image">
+                               <img src="images/img_2.jpg" alt="Image" className="img-fluid"/>
+                               <div className="media-image-body">
+                                   <h2 className="font-secondary text-uppercase">Распродажа солцезащитных очков</h2>
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                                   <p><Link to="/contacts" className="btn btn-primary text-white px-4"><span className="caption">Успеть купить</span></Link>
+                                   </p>
+                               </div>
+                           </div>
            </OwlCarousel>
        </div>
    </div>

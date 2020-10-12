@@ -2,12 +2,14 @@ import React from 'react';
 import {NavLink} from "react-router-dom";
 
 function Menu() {
-   return <div className="site-navbar-wrap js-site-navbar bg-white">
+   return <div className="site-navbar-wrap js-site-navbar bg-primary">
       <div className="container">
-         <div className="site-navbar bg-light">
+         <div className="site-navbar bg-primary">
             <div className="row align-items-center">
-               <div className="col-2">
-                  <NavLink to="/" className="font-weight-bold"><img src="images/logo.png" width="150%"/></NavLink>
+               <div className="col-2 bg-primary">
+                  <NavLink to="/" className="font-weight-bold">
+                     <img className="bg-primary" src="images/logo.png" />
+                  </NavLink>
                </div>
                <div className="col-10">
                   <nav className="site-navigation text-right" role="navigation">
