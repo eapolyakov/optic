@@ -1,8 +1,8 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
 
-function Menu() {
-   return <div className="site-navbar-wrap js-site-navbar bg-primary">
+export default function Menu() {
+   return <div className="site-navbar-wrap js-site-navbar light">
       <div className="container">
          <div className="site-navbar bg-light">
             <div className="row align-items-center">
@@ -118,6 +118,5 @@ function Menu() {
          </div>
       </div>
    </div>
-}
 
-export default Menu;
+}

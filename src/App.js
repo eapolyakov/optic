@@ -14,7 +14,6 @@ import Footer from "./components/Footer";
 import Picture from "./components/Picture";
 import SectionServises from "./components/SectionServises";
 import NewsTopics from "./components/NewsTopics";
-import FeedBack from "./components/FeedBack";
 import CatalogPromo from "./components/CatalogPromo";
 import SectionLocations from "./components/SectionLocations";
 import FormContainer from "./components/FormContainer";
@@ -23,7 +22,12 @@ import LocationSherbinka from "./components/LocationSherbinka";
 import LocationSP from "./components/LocationSherbinka"
 
 function App(props) {
-   return (<div className="site-wrap">
+   return (<div className="site-wrap bg-image"
+                style = {{
+                    backgroundSize: "25%",
+                    backgroundAttachment: "fixed",
+                    backgroundImage: "url(images/topography.png)",
+                    backgroundRepeat: "repeat"}}>
       <BrowserRouter>
           <MobileMenu/>
           <Menu/>
@@ -34,7 +38,7 @@ function App(props) {
                   <SectionLocations/>
                   <SiteHalf/>
                   <SectionIcons/>
-                  <SectionPromo/>
+                  <CatalogPromo/>
                   <Reviews/>
                   <PreFooter/>
               </div>

@@ -10,7 +10,7 @@ function NewsItem(props){
                 <h2 className="font-secondary text-uppercase">{props.title}</h2>
                 <span className="d-block mb-3">{props.author} &mdash; {props.date}</span>
                 <p>{props.description}</p>
-                <p><NavLink to={"/news/"+props.title.replaceAll(" ","_").replaceAll("#","№")}>Подробнее</NavLink></p>
+                <p><NavLink to={"/news/"+props.title.replaceAll(" ","_").replaceAll("#","№")}>Читать дальше</NavLink></p>
             </div>
         </div>
    </div>
@@ -53,11 +53,8 @@ class News extends React.Component {
                             <div className="custom-pagination">
                                 <span className="current">1</span>
                                 <a href="#">2</a>
-                                <a href="#">3</a>
-                                <a href="#">4</a>
-                                <a href="#">5</a>
                                 <span>...</span>
-                                <a href="#">14</a>
+                                <a href="#">5</a>
                             </div>
                         </div>
                     </div>

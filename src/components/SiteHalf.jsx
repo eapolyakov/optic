@@ -8,27 +8,27 @@ export default function SiteHalf() {
                    <img src="images/hero_bg_2.jpg" width="100%"/>
                </div>
                <div className="col-md-6 ml-md-auto pl-lg-5">
-                   <span className="caption d-block mb-2 font-secondary font-weight-bold text-center">Outstanding Services</span>
-                   <h2 className="site-section-heading text-uppercase font-secondary mb-5 text-center">Why Choose Us</h2>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aliquid eius facilis
-                       voluptatem eligendi magnam accusamus vel commodi asperiores sint rem reprehenderit nobis
-                       nesciunt veniam qui fugit doloremque numquam quod.</p>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora distinctio ipsam
-                       nesciunt recusandae repellendus asperiores amet.</p>
+                   <span className="caption d-block my-2 font-secondary font-weight-bold text-center">Высокое качество, доступные цены</span>
+                   <h2 className="site-section-heading text-uppercase font-secondary mb-3 text-center">Каждый день</h2>
+                   <p>Мы рады предложить Вам: огромный ассортимент контактных линз, оправ и солнцезащитных очков, который обновляется каждый сезон.
+                       Классика, гламур, авангард, пластик, титан, сталь, стразы, рог, кожа — более 1000 моделей!
+                       У нас есть имиджевые очки, очки для вождения, детские очки, солнцезащитные. А также большой выбор аксессуаров!
+                   </p>
+                   <p>Пользователи контактных линз найдут в наших салонах всё необходимое, тем более, что в сфере контактной коррекции за последнее время произошли революционные открытия.</p>
                </div>
           </div>
        </div>
 
        <div className="container">
            <div className="row no-gutters align-items-stretch">
-               <div className="col-md-5 mr-md-auto py-5">
-                   <span className="caption d-block mb-2 font-secondary font-weight-bold text-center">Outstanding Services</span>
-                   <h2 className="site-section-heading text-uppercase font-secondary mb-5 text-center">Why Choose Us</h2>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aliquid eius facilis
-                       voluptatem eligendi magnam accusamus vel commodi asperiores sint rem reprehenderit nobis
-                       nesciunt veniam qui fugit doloremque numquam quod.</p>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora distinctio ipsam
-                       nesciunt recusandae repellendus asperiores amet.</p>
+               <div className="col-md-6 mr-md-auto pr-lg-5 mb-5">
+                   <span className="caption d-block my-2 font-secondary font-weight-bold text-center">Помогаем видеть мир ярче</span>
+                   <h2 className="site-section-heading text-uppercase font-secondary mb-3 text-center">8 лет </h2>
+                   <p>Клиентам «Яркого Мира» доступны последние достижениями и возможности оптической индустрии.
+                       Среди самых популярных моделей очки с прогрессивными и фотохромными линзами.
+                       А так же очки для вождения, работы на компьютере, рыбалки, для детей, и занятий спортом.</p>
+                   <p>В «Ярком Мире» Вы можете бесплатно проверить остроту зрения! Известно, что зрение нужно проверять минимум один раз в год.
+                   Наших клиентов, и тех кто ещё ими не стал Яркий Мир приглашает проверить зрение у опытного врача быстро и без очередей.</p>
                </div>
                <div className="col-md-6 img-bg-1">
                    <img src="images/hero_bg_1.jpg" width="100%"/>

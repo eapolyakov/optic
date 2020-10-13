@@ -5,8 +5,7 @@ import LocationSherbinka from "./LocationSherbinka";
 import LocationSP from "./LocationSP";
 
 export default function SectionLocations() {
-    return <div className="site-section"
-                style = {{backgroundAttachment: "fixed", backgroundImage: "url(images/topography.png)"}}>
+    return <div className="site-section">
         <div className="container">
             <div className="row mb-5">
                 <div className="col-md-12">
