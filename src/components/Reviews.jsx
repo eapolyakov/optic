@@ -23,7 +23,7 @@ const options = {
 export default function Rewiews(props) {
     return <div className="site-section block-15 nav-direction-white">
         <div className="container">
-            <div className="row mb-3">
+            <div className="row pb-3">
                 <div className="col-md-12">
                     <h2 className="site-section-heading text-center text-uppercase">Отзывы</h2>
                 </div>

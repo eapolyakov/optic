@@ -7,9 +7,9 @@ import LocationSP from "./LocationSP";
 export default function SectionLocations() {
     return <div className="site-section">
         <div className="container">
-            <div className="row mb-5">
+            <div className="row pb-3">
                 <div className="col-md-12">
-                    <h2 className="site-section-heading text-center text-uppercase">Наши салоны</h2>
+                    <h2 className="site-section-heading text-center text-uppercase mb-3">Наши салоны</h2>
                 </div>
             </div>
             <Router>

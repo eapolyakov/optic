@@ -3,10 +3,10 @@ import {BrowserRouter, Route} from "react-router-dom";
 import Menu from './components/Menu';
 import MobileMenu from './components/MobileMenu';
 import Carousel from "./components/Carousel";
-import SectionCatalog from "./components/SectionCatalog";
+import CarouselPromo from "./components/CarouselPromo";
 import SectionAbout from "./components/SectionAbout";
 import SiteHalf from "./components/SiteHalf"
-import SectionIcons from "./components/SectionIcons";
+import MainServices from "./components/MainServices";
 import SectionPromo from "./components/SectionPromo";
 import Reviews from "./components/Reviews";
 import PreFooter from "./components/PreFooter"
@@ -14,7 +14,7 @@ import Footer from "./components/Footer";
 import Picture from "./components/Picture";
 import SectionServises from "./components/SectionServises";
 import NewsTopics from "./components/NewsTopics";
-import CatalogPromo from "./components/CatalogPromo";
+import SinglePromo from "./components/SinglePromo";
 import SectionLocations from "./components/SectionLocations";
 import FormContainer from "./components/FormContainer";
 import LocationPodolsk from "./components/LocationPodolsk";
@@ -34,19 +34,19 @@ function App(props) {
           <Route exact path="/" render={()=>{
               return <div>
                   <Carousel/>
-                  <SectionCatalog/>
+                  <SinglePromo/>
                   <SectionLocations/>
+                  <CarouselPromo/>
                   <SiteHalf/>
-                  <SectionIcons/>
-                  <CatalogPromo/>
+                  <MainServices/>
                   <Reviews/>
                   <PreFooter/>
               </div>
           }}/>
           <Route path="/catalog" render={()=>{
               return <div>
-                  <CatalogPromo/>
-                  <SectionCatalog/>
+                  <SinglePromo/>
+                  <CarouselPromo/>
                   <PreFooter/>
               </div>
           }}/>

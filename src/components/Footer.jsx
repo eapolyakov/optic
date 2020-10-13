@@ -75,17 +75,13 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="row pt-1 mt-3 text-center text-dark">
+            <div className="row pt-1 mt-3 text-dark text-center">
                 <div className="col-md-12">
                     <p>
-                        Copyright &copy;
-                        <Year/>
-                        All Rights Reserved | This template is made with <i className="icon-heart text-danger"
-                                                                            aria-hidden="true"></i> by <a
+                         <Year/> by Evgeniy Polyakov |Copyright &copy; All Rights Reserved | This template is made with <i className="icon-heart text-danger" aria-hidden="true"></i> by <a
                         href="https://colorlib.com" target="_blank">Colorlib</a>
                     </p>
                 </div>
-
             </div>
         </div>
     </footer>

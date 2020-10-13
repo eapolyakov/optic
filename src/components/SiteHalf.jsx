@@ -1,11 +1,11 @@
 import React from "react";
 
 export default function SiteHalf() {
-   return <div>
+   return <div className="site-section">
        <div className="container">
            <div className="row no-gutters align-items-stretch">
                <div className="col-md-6 img-bg-1">
-                   <img src="images/hero_bg_2.jpg" width="100%"/>
+                   <img src="images/lenses.jpg" width="100%"/>
                </div>
                <div className="col-md-6 ml-md-auto pl-lg-5">
                    <span className="caption d-block my-2 font-secondary font-weight-bold text-center">Высокое качество, доступные цены</span>
@@ -31,7 +31,7 @@ export default function SiteHalf() {
                    Наших клиентов, и тех кто ещё ими не стал Яркий Мир приглашает проверить зрение у опытного врача быстро и без очередей.</p>
                </div>
                <div className="col-md-6 img-bg-1">
-                   <img src="images/hero_bg_1.jpg" width="100%"/>
+                   <img src="images/opravy.jpg" width="100%"/>
                </div>
            </div>
        </div>

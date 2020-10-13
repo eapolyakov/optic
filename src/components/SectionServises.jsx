@@ -4,7 +4,7 @@ import ServiceItem from "./ServiceItem";
 function SectionServises() {
     return <div className="site-section">
         <div className="container">
-            <div className="row mb-5">
+            <div className="row pb-3">
                 <div className="col-md-12">
                     <h2 className="site-section-heading text-center text-uppercase">Услуги для Вас</h2>
                 </div>
